@@ -112,5 +112,59 @@ const buah = () => {
   console.log(newArr);
 };
 
+const komentar = () => {
+  let database = [
+    {
+      commentId: 1,
+      commentContent: "Hai",
+      replies: [
+        {
+          commentId: 11,
+          commentContent: "Hai juga",
+          replies: [
+            {
+              commentId: 111,
+              commentContent: "Haai juga hai jugaa",
+            },
+            {
+              commentId: 112,
+              commentContent: "Haai juga hai jugaa",
+            },
+          ],
+        },
+        {
+          commentId: 12,
+          commentContent: "Hai juga",
+          replies: [
+            {
+              commentId: 121,
+              commentContent: "Haai juga hai jugaa",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      commentId: 2,
+      commentContent: "Halooo",
+    },
+  ];
+  let newArr = database.map((chat) =>({
+    commentId: chat.commentId
+  }));
 
+  // let balas = database.map((chat) => {
+  //   let a = chat.replies;
+    
+  //   let newArr = a.filter((id) => ({
+  //     commentId:id.commentId
+  //   }))
+  //   console.log(a)
+  //   console.log(newArr)
+  // });
+
+  console.log(newArr);
+  // console.log(balas);
+};
+console.log(komentar());
 console.log(buah());
