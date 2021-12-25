@@ -49,6 +49,11 @@ const buah = () =>{
         tipeBuah:list.fruitType,
         stock:list.stock
     }))
+   
+    let buahPemilik = newArr.map(pemilik => pemilik.namaBuah)
+    let pemilik = "andi"
+    
+    console.log(`${pemilik} memiliki buah ${buahPemilik}`)
     console.log(newArr)
 }
 console.log(buah())
