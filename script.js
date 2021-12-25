@@ -43,4 +43,12 @@ const buah = () =>{
           stock: 150,
         },
       ];
+    let newArr = database.map(list =>({
+        buahId: list.fruitId,
+        namaBuah:list.fruitName,
+        tipeBuah:list.fruitType,
+        stock:list.stock
+    }))
+    console.log(newArr)
 }
+console.log(buah())
