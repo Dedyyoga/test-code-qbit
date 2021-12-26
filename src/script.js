@@ -149,13 +149,13 @@ const komentar = () => {
       commentContent: "Halooo",
     },
   ];
-  let newArr = database.map((chat) =>({
-    commentId: chat.commentId
+  let newArr = database.map((chat) => ({
+    commentId: chat.commentId,
   }));
 
   // let balas = database.map((chat) => {
   //   let a = chat.replies;
-    
+
   //   let newArr = a.filter((id) => ({
   //     commentId:id.commentId
   //   }))
