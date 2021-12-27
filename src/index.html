@@ -22,49 +22,84 @@
         bg-white/95
       "
     >
-      <div class="w-full h-full pl-6">
-        <div class="grid grid-cols-2 h-full w-full items-center">
-          <p>Home</p>
-          <div class="justify-self-end flex gap-3 justify-center w-full">
-            <p class="justify-self-end">Content</p>
-            <p class="justify-self-center">About</p>
-          </div>
+      <div class="w-full h-full pl-8">
+        <div class="h-full w-full">
+          <ul class="flex gap-3 items-center h-full">
+            <li>
+              <a
+                href="#home"
+                class="
+                  text-black
+                  hover:text-sky-500
+                  delay-100
+                  transition
+                  ease-in-out
+                  font-bold
+                  text-xl
+                  font-sans
+                "
+                >Home</a
+              >
+            </li>
+            <li class="justify-self-start">
+              <a
+                href="#content"
+                class="
+                  text-black
+                  hover:text-sky-500
+                  delay-100
+                  transition
+                  ease-in-out
+                  font-bold
+                  text-xl
+                  font-sans
+                "
+                >Content</a
+              >
+            </li>
+          </ul>
+          <!-- <div class="justify-self-end flex gap-3 justify-center w-full"></div> -->
         </div>
       </div>
     </nav>
     <!-- main page -->
-    <div class="pl-20 w-full h-screen">
+    <div class="pl-20 w-full h-screen" id="home">
       <!-- container -->
       <div class="h-screen w-full flex flex-row">
         <!-- content -->
         <div class="w-3/6 h-screen">
-          <div class="h-screen flex justify-center flex-col pb-32 pr-5">
-            <h1 class="text-7xl font-sans">Ayo buka Usaha sendiri dengan daftar <span class="font-bold">UMKM</span></h1>
+          <div class="h-screen flex justify-center flex-col pb-32 pr-5 pt-10">
+            <h1 class="text-7xl font-sans">
+              Ayo buka Usaha sendiri dengan daftar
+              <span class="font-bold">UMKM</span>
+            </h1>
           </div>
         </div>
         <div class="w-3/6 h-screen">
           <div class="w-full h-full">
             <!-- scroll -->
-            <div
-              class="flex overflow-x-scroll h-full items-center w-full gap-3"
-            >
+            <div class="flex h-full items-center w-full">
               <!-- items -->
-              <div class="flex-none py-6 w-full">
-                <!-- content -->
-                <div class="flex flex-col items-center justify-center gap-3">
-                  <img
-                    class="rounded-xl"
-                    src="https://images5.alphacoders.com/108/thumbbig-1087220.webp"
-                  />
-                </div>
-              </div>
-              <div class="flex-none py-6 w-full">
-                <!-- content -->
-                <div class="flex flex-col items-center justify-center gap-3">
-                  <img
-                    class="rounded-xl"
-                    src="https://images5.alphacoders.com/108/thumbbig-1087220.webp"
-                  />
+              <div class="flex gap-3">
+                <div class="flex-none py-6 slide-image">
+                  <!-- content -->
+                  <div
+                    class="
+                      flex flex-col
+                      items-center
+                      justify-center
+                      slide-countiner
+                      w-full
+                    "
+                  >
+                    <img
+                      class="rounded-xl"
+                      src="https://image.freepik.com/free-vector/marketplace-concept-illustration_114360-7002.jpg"
+                    />
+                    <a href="https://www.freepik.com/vectors/food"
+                      >Food vector created by stories - www.freepik.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -75,7 +110,7 @@
       <!-- container -->
     </div>
     <!-- main page 2 -->
-    <div class="pl-20 w-full h-screen">
+    <div class="pl-20 w-full h-screen" id="content">
       <!-- container -->
       <div class="h-screen w-full flex flex-row">
         <!-- content -->
@@ -84,7 +119,7 @@
             <h1 class="text-7xl font-sans">
               Apa itu <span class="font-bold">UMKM</span>
             </h1>
-            <p class="text-xl">
+            <p class="text-xl font-sans">
               Kepanjangan UMKM atau singkatan UMKM yakni usaha mikro, kecil, dan
               menengah. sebagai bisnis yang dijalankan individu, rumah tangga,
               atau badan usaha ukuran kecil. Penggolongan UMKM lazimnya
@@ -103,8 +138,9 @@
                 <div class="flex flex-col items-center justify-center gap-3">
                   <img
                     class="rounded-xl"
-                    src="https://images5.alphacoders.com/108/thumbbig-1087220.webp"
+                    src="https://image.freepik.com/free-vector/women-choosing-fresh-vegetables-from-farm-farmer-eco-meal-flat-vector-illustration-healthy-food-nutrition_74855-13292.jpg"
                   />
+                  <a href="https://www.freepik.com/vectors/food">Food vector created by pch.vector - www.freepik.com</a>
                 </div>
               </div>
             </div>
@@ -120,9 +156,6 @@
       <div class="w-full h-1/4">
         <div class="h-1/4">
           <h1 class="text-6xl font-bold">Apa saja Jenis UMKM itu?</h1>
-          <p class="text-xl pt-6">
-            amet, consectetur adipiscing elit ut aliquam
-          </p>
         </div>
       </div>
       <div class="h-screen w-full overflow-y-scroll">
@@ -130,7 +163,7 @@
         <div class="w-full h-full flex flex-row">
           <div class="h-full w-6/12 flex flex-col pb-32 pr-5 pt-10 gap-5">
             <h1 class="text-6xl font-bold">Usaha Micro</h1>
-            <p class="text-xl">
+            <p class="text-xl font-sans">
               Usaha mikro UMKM adalah usaha produktif milik orang perorangan
               dan/atau badan usaha perorangan yang memenuhi kriteria usaha
               mikro. Penjualan atau omzet dari usaha mikro dalam setahun paling
@@ -142,27 +175,35 @@
             </p>
           </div>
           <div class="h-full w-6/12">
-            <div class="w-full h-full">
-              <!-- scroll -->
-              <div class="h-full items-center gap-5">
-                <!-- items -->
-                <div class="flex-none py-6">
-                  <!-- content -->
-                  <div class="flex flex-col items-center justify-center gap-3">
-                    <img
-                      class="rounded-xl"
-                      src="https://images5.alphacoders.com/108/thumbbig-1087220.webp"
-                    />
-                  </div>
-                </div>
+            <div
+              class="h-full w-full items-center flex justify-center flex-col"
+            >
+              <div
+                class="
+                  h-5/6
+                  w-11/12
+                  rounded-lg
+                  overflow-hidden
+                  flex
+                  items-center
+                "
+              >
+                <img
+                  src="https://image.freepik.com/free-vector/marketplace-concept-illustration_114360-7332.jpg"
+                  alt=""
+                  srcset=""
+                />
               </div>
+              <a href="https://www.freepik.com/vectors/food"
+                >Food vector created by stories - www.freepik.com</a
+              >
             </div>
           </div>
         </div>
         <div class="w-full h-full flex flex-row">
           <div class="h-full w-6/12 flex flex-col pb-32 pr-5 pt-10 gap-5">
             <h1 class="text-6xl font-bold font-sans">Usaha Kecil</h1>
-            <p class="text-xl">
+            <p class="text-xl font-sans">
               Usaha kecil Usaha kecil adalah usaha ekonomi produktif yang
               berdiri sendiri, dilakukan oleh orang perorangan atau badan usaha
               yang bukan merupakan anak perusahaan atau bukan cabang perusahaan
@@ -170,30 +211,42 @@
               tidak langsung dari usaha menengah atau usaha besar yang memenuhi
               kriteria usaha kecil. Usaha kecil yakni memiliki kekayaan bersih
               antara Rp 50 juta sampai dengan Rp 500 juta, lalu penjualan per
-              tahun antara Rp 300 juta sampai Rp 2,5 miliar.
+              tahun antara Rp 300 juta sampai Rp 2,5 miliar. Contoh UMKM kecil
+              adalah usaha binatu, restoran kecil, bengkel motor, katering,
+              usaha fotocopy, dan sebagainya.
             </p>
           </div>
+
           <div class="h-full w-6/12">
-            <div class="w-full h-full">
-              <div class="h-full items-center gap-5">
-                <!-- items -->
-                <div class="flex-none py-6">
-                  <!-- content -->
-                  <div class="flex flex-col items-center justify-center gap-3">
-                    <img
-                      class="rounded-xl"
-                      src="https://images5.alphacoders.com/108/thumbbig-1087220.webp"
-                    />
-                  </div>
-                </div>
+            <div
+              class="h-full w-full items-center flex justify-center flex-col"
+            >
+              <div
+                class="
+                  h-5/6
+                  w-11/12
+                  rounded-lg
+                  overflow-hidden
+                  flex
+                  items-center
+                "
+              >
+                <img
+                  src="https://image.freepik.com/free-vector/shop-with-sign-we-are-open_23-2148547718.jpg"
+                  alt=""
+                  srcset=""
+                />
               </div>
+              <a href="https://www.freepik.com/vectors/business"
+                >Business vector created by freepik - www.freepik.com</a
+              >
             </div>
           </div>
         </div>
         <div class="w-full h-full flex flex-row">
-          <div class="h-full w-6/12 flex flex-col pb-32 pr-5 pt-8 gap-5">
+          <div class="h-full w-6/12 flex flex-col pb-32 pr-5 pt-4 gap-5">
             <h1 class="text-6xl font-bold">Usaha Menengah</h1>
-            <p class="text-xl">
+            <p class="text-xl font-sans">
               Usaha menengah adalah usaha ekonomi produktif yang berdiri
               sendiri, yang dilakukan oleh orang perorangan atau badan usaha
               yang bukan merupakan anak perusahaan atau cabang perusahaan yang
@@ -210,20 +263,28 @@
             </p>
           </div>
           <div class="h-full w-6/12">
-            <div class="w-full h-full">
-              <!-- scroll -->
-              <div class="h-full items-center gap-5">
-                <!-- items -->
-                <div class="flex-none py-6">
-                  <!-- content -->
-                  <div class="flex flex-col items-center justify-center gap-3">
-                    <img
-                      class="rounded-xl"
-                      src="https://images5.alphacoders.com/108/thumbbig-1087220.webp"
-                    />
-                  </div>
-                </div>
+            <div
+              class="h-full w-full items-center flex justify-center flex-col"
+            >
+              <div
+                class="
+                  h-5/6
+                  w-11/12
+                  rounded-lg
+                  overflow-hidden
+                  flex
+                  items-center
+                "
+              >
+                <img
+                  src="https://image.freepik.com/free-vector/people-supermarket-illustration-big-store-with-products_1284-51586.jpg"
+                  alt=""
+                  srcset=""
+                />
               </div>
+              <a href="https://www.freepik.com/vectors/background"
+                >Background vector created by macrovector - www.freepik.com</a
+              >
             </div>
           </div>
         </div>

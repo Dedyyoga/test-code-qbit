@@ -1,3 +1,5 @@
+
+
 // case 1
 const buah = () => {
   let database = [
@@ -153,6 +155,7 @@ const komentar = () => {
     commentId: chat.commentId,
   }));
 
+  // case 2
   // let balas = database.map((chat) => {
   //   let a = chat.replies;
 
